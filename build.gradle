@@ -14,7 +14,7 @@ android {
 
 dependencies {
     // Jetpack Compose BOM
-    implementation(platform("androidx.compose:compose-bom:2025.06.00"))
+    implementation(platform("androidx.compose:compose-bom:2025.05.01"))
 
     // AndroidX Libraries
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.9.0")
