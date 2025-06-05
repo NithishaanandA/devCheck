@@ -3,6 +3,18 @@ repositories {
     mavenCentral()
 }
 
+android {
+    packaging {
+        resources {
+            excludes += "META-INF/DEPENDENCIES"
+            excludes += "META-INF/LICENSE"
+            excludes += "META-INF/LICENSE.txt"
+            excludes += "META-INF/NOTICE"
+            excludes += "META-INF/NOTICE.txt"
+        }
+    }
+}
+
 dependencies {
     implementation "androidx.core:core-ktx:1.10.1"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.1"
