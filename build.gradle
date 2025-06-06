@@ -1,60 +1,62 @@
-
 dependencies {
     // Core & Lifecycle
-    implementation "androidx.core:core-ktx:1.16.0" // Latest stable as of May 2025
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.9.0" // Latest stable as of May 2025
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.9.0" // Latest stable as of May 2025
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
 
     // UI & Compose
-    implementation "androidx.appcompat:appcompat:1.7.1" // Latest stable as of May 2025
-    implementation "androidx.activity:activity-compose:1.11.0" // Latest stable as of May 2025
-    implementation platform("androidx.compose:compose-bom:2025.05.01") // Latest BOM as of May 2025
-    implementation "androidx.compose.ui:ui:1.9.0" // Latest stable as of May 2025
-    implementation "androidx.compose.ui:ui-tooling:1.9.0" // Latest stable as of May 2025
-    implementation "androidx.constraintlayout:constraintlayout-compose:1.1.0" // Latest stable as of May 2025
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.activity:activity-compose:1.8.2")
+    implementation(platform("androidx.compose:compose-bom:2025.05.01"))
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-tooling")
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
 
     // Accompanist
-    implementation "com.google.accompanist:accompanist-systemuicontroller:0.30.1" // Latest stable as of May 2025
-    implementation "com.google.accompanist:accompanist-flowlayout:0.30.1" // Latest stable as of May 2025
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.31.5-beta")
+    implementation("com.google.accompanist:accompanist-flowlayout:0.31.5-beta")
 
     // Navigation & ViewModel
-    implementation "androidx.navigation:navigation-compose:2.6.0" // Latest stable as of May 2025
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.9.0" // Latest stable as of May 2025
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
 
     // Material Design
-    implementation "androidx.material3:material3:1.2.1" // Latest stable as of May 2025
+    implementation("androidx.compose.material3:material3") // version managed by BOM
 
     // Kotlin
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.10" // Latest stable as of May 2025
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.10")
 
     // Media
-    implementation "androidx.media3:media3-ui:1.1.0" // Latest stable as of May 2025
+    implementation("androidx.media3:media3-ui:1.3.1")
+    implementation("androidx.media3:media3-exoplayer:1.3.1")
 
     // Additional Libraries
-    implementation "androidx.compose.material:material-icons-extended:1.7.0" // Latest stable as of May 2025
-    implementation "io.coil-kt:coil-compose:2.4.0" // Latest stable as of May 2025
-    implementation "com.airbnb.android:lottie-compose:6.0.0" // Latest stable as of May 2025
-    implementation "net.zetetic:android-database-sqlcipher:4.5.0" // Latest stable as of May 2025
-    implementation "androidx.sqlite:sqlite:2.3.0" // Latest stable as of May 2025
-    implementation "com.squareup.okhttp3:okhttp:4.12.0" // Latest stable as of May 2025
-    implementation "com.itextpdf:kernel:7.2.5" // Latest stable as of May 2025
-    implementation "org.apache.poi:poi-ooxml:5.2.3" // Latest stable as of May 2025
-    implementation "com.checkout:checkout-sdk-java:6.7.0" // Latest stable as of May 2025
-    implementation "org.apache.commons:commons-lang3:3.13.0" // Latest stable as of May 2025
-    implementation "com.google.code.gson:gson:2.10.1" // Latest stable as of May 2025
-    implementation "io.reactivex.rxjava3:rxjava:3.1.7" // Latest stable as of May 2025
-    implementation "io.reactivex.rxjava3:rxandroid:3.0.2" // Latest stable as of May 2025
-    implementation "androidx.media3:media3-exoplayer:1.1.0" // Latest stable as of May 2025
+    implementation("androidx.compose.material:material-icons-extended")
+    implementation("io.coil-kt:coil-compose:2.5.0")
+    implementation("com.airbnb.android:lottie-compose:6.1.0")
+    implementation("net.zetetic:android-database-sqlcipher:4.5.4")
+    implementation("androidx.sqlite:sqlite:2.3.1")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.itextpdf:kernel:7.2.5")
+    implementation("org.apache.poi:poi-ooxml:5.2.3")
+    implementation("com.checkout:checkout-sdk-java:6.7.0")
+    implementation("org.apache.commons:commons-lang3:3.13.0")
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("io.reactivex.rxjava3:rxjava:3.1.8")
+    implementation("io.reactivex.rxjava3:rxandroid:3.0.2")
 
     // Testing Libraries
-    testImplementation "junit:junit:4.13.2" // Latest stable as of May 2025
-    androidTestImplementation "androidx.test.ext:junit:1.1.5" // Latest stable as of May 2025
-    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1" // Latest stable as of May 2025
-    androidTestImplementation platform("androidx.compose:compose-bom:2025.05.01") // Latest BOM as of May 2025
-    androidTestImplementation "androidx.compose.ui:ui-test-junit4:1.9.0" // Latest stable as of May 2025
-    debugImplementation "androidx.compose.ui:ui-tooling:1.9.0" // Latest stable as of May 2025
-    debugImplementation "androidx.compose.ui:ui-test-manifest:1.9.0" // Latest stable as of May 2025
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    androidTestImplementation(platform("androidx.compose:compose-bom:2025.05.01"))
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    debugImplementation("androidx.compose.ui:ui-tooling")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    implementation platform("androidx.compose:compose-bom:2025.05.01")
 }
+
 
 
 android {
