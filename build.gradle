@@ -44,7 +44,7 @@ implementation("com.itextpdf:kernel:7.2.5")
 implementation("org.apache.poi:poi-ooxml:5.2.3")
 
 // Payment
-implementation("com.checkout:checkout-sdk-java:6.7.0")
+implementation 'com.razorpay:checkout:1.6.33'
 
 // Utility
 implementation("org.apache.commons:commons-lang3:3.13.0")
